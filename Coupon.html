@@ -7,15 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/Coupon.css"
+    <link rel="stylesheet" href="css/Coupon.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
     <style>
 
     </style>
 </head>
 
 <body>
+    <dialog id="Use_check_information">
+        <p>確定要使用嗎?</p>
+        <button type="button" class="btn btn-outline-success Use_button Use_confirm">確定</button>
+        <button type="button" class="btn btn-outline-success Use_button Use_cancel">取消</button>
+    </dialog>
     <div id="head">
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
@@ -49,15 +55,16 @@
             名稱：騎行時間增加一小時<br>
             說明：使用本優惠券將可以增加騎行的時間一個小時，重複使用時間可疊加。<br>
             使用期限：2022/12/31<br>
-            <button style="width: 100%; background-color: #F1DEFF;" type="button" class="btn btn-outline-success">使用</button>
+            <button id="button1" type="button" class="btn btn-outline-success Use_button">使用</button>
         </div>
         <div class="Coupon_content2">
             名稱：邵族文化村禮券100元<br>
             說明：使用本優惠券可以於邵族文化村內折抵商品100元。<br>
             使用期限：2022/12/31<br>
-            <button style="width: 100%; background-color: #F1DEFF;" type="button" class="btn btn-outline-success">使用</button>
+            <button type="button" class="btn btn-outline-success Use_button">使用</button>
         </div>
     </div>
+    <script src="js/Coupon.js"></script>
 </body>
 
 </html>
