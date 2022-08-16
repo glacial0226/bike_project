@@ -43,3 +43,17 @@ footer {
     height: auto;
   }
 }
+
+@keyframes fadeout {
+   100% {opacity: 0;}
+  50% {opacity: 1;}
+   0% {opacity: 0;}
+
+}
+
+
+.alert-success{
+  animation: fadeout 3s ease;
+  opacity: 0;
+}
+
